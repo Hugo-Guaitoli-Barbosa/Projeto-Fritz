@@ -9,7 +9,6 @@ const links = [
   { to: "/como-funciona", label: "Como funciona", icon: BookOpen },
   { to: "/sobre", label: "Sobre", icon: Info },
 ] as const;
-
 export function SiteHeader() {
   const { pathname } = useLocation();
   return (
@@ -47,7 +46,7 @@ export function SiteHeader() {
             );
           })}
         </nav>
-
+        
         <Link
           to="/mapa"
           className="hidden md:inline-flex items-center gap-2 rounded-full bg-gradient-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-glow hover:scale-[1.03] transition-transform"
